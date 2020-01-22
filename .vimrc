@@ -1,8 +1,15 @@
 set nocompatible
 
 " Plugins
+
+" if empty(glob('~/.vim/autoload/plug.vim'))
+"   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+"     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+"   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+" endif
+
 " Only configure if vim-plug is installed
-if !empty(glob('~/.vim/autoload/plug.vim'))
+if !empty(glob('~/.vim/autoload/plug.vim')) || !empty(glob('~/vimfiles/autoload/plug.vim'))
     call plug#begin('~/.vim/plugged')
 
     Plug 'ctrlpvim/ctrlp.vim'
@@ -60,6 +67,7 @@ set expandtab
 set wrap
 set lbr
 "set formatoptions=tcqrn1
+set tw=0
 
 " UI
 set number
@@ -110,7 +118,9 @@ let mapleader=','
 " Try this for a bit
 inoremap jk <esc>
 
-command! W w !sudo tee % > /dev/null
+if !has('win16') && !has('win32')
+    command! W w !sudo tee % > /dev/null
+endif
 
 nnoremap<leader>l :set list!<CR>
 
