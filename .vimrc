@@ -96,7 +96,7 @@ set hlsearch
 set ignorecase
 set smartcase
 
-nnoremap<silent> <leader><CR> :nohlsearch<CR>
+map<silent> <leader><CR> :nohlsearch<CR>
 
 " Folding
 set foldenable
