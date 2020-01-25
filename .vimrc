@@ -1,5 +1,7 @@
 set nocompatible
 
+let mapleader=','
+
 " Plugins
 
 " if empty(glob('~/.vim/autoload/plug.vim'))
@@ -15,8 +17,11 @@ if !empty(glob('~/.vim/autoload/plug.vim')) || !empty(glob('~/vimfiles/autoload/
     Plug 'ctrlpvim/ctrlp.vim'
 "    Plug 'itchyny/lightline.vim'
     Plug 'airblade/vim-gitgutter'
-    "Plug 'Valloric/YouCompleteMe'
-    "Plug 'chriskempson/base16-vim'
+"    Plug 'Valloric/YouCompleteMe'
+    Plug 'tpope/vim-fugitive'
+
+
+    Plug 'morhetz/gruvbox'
 
     call plug#end()
 
@@ -42,13 +47,20 @@ if !empty(glob('~/.vim/autoload/plug.vim')) || !empty(glob('~/vimfiles/autoload/
 
     " ,b launches ctrl-p buffer mode
     nmap <silent> <leader>b :CtrlPBuffer<CR>
+
+
 endif
 
 
 " Colors & Fonts
 if has('gui_running')
     set guifont=DejaVu\ Sans\ Mono:h10
-    colorscheme desert
+
+    if has#colorscheme('gruvbox')
+        colorscheme gruvbox
+    else
+        colorscheme desert
+    endif
 
     set mouse=a
     autocmd GUIEnter * set vb t_vb=
@@ -113,7 +125,6 @@ nnoremap j gj
 nnoremap k gk
 
 " Commands
-let mapleader=','
 
 " Try this for a bit
 inoremap jk <esc>
