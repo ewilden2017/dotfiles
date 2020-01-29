@@ -69,6 +69,7 @@ else
 endif
 
 syntax on
+set background=dark
 
 " Whitespace
 set tabstop=4
