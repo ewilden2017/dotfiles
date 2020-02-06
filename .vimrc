@@ -65,7 +65,7 @@ if has('gui_running')
     set mouse=a
     autocmd GUIEnter * set vb t_vb=
 else
-    colorscheme desert
+    colorscheme gruvbox
 endif
 
 syntax on
