@@ -31,7 +31,10 @@ parse_git_branch() {
 }
 
 NEWLINE=$'\n'
+MAIN_COLOR=109
+SECONDARY_COLOR=246
+ERROR_COLOR=124
 
 # Color version
 setopt prompt_subst
-export  PROMPT="%F{27}%B[%n@%m] %10~%b%(?.. %F{88}[%?])%f %F{39}\$(parse_git_branch)%f ${NEWLINE}%# "
+export  PROMPT="%F{${MAIN_COLOR}}%B[%n@%m] %10~%b%(?.. %F{${ERROR_COLOR}}[%?])%f %F{${SECONDARY_COLOR}}\$(parse_git_branch)%f ${NEWLINE}%# "

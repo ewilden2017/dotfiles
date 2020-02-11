@@ -22,6 +22,7 @@ if !empty(glob('~/.vim/autoload/plug.vim')) || !empty(glob('~/vimfiles/autoload/
 
 
     Plug 'morhetz/gruvbox'
+    Plug 'arcticicestudio/nord-vim'
 
     call plug#end()
 
