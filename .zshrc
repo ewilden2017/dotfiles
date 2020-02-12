@@ -37,4 +37,4 @@ ERROR_COLOR=124
 
 # Color version
 setopt prompt_subst
-export  PROMPT="%F{${MAIN_COLOR}}%B[%n@%m] %10~%b%(?.. %F{${ERROR_COLOR}}[%?])%f %F{${SECONDARY_COLOR}}\$(parse_git_branch)%f ${NEWLINE}%# "
+export  PROMPT="%F{white}%B[%n@%m] %F{${MAIN_COLOR}}%10~%b%(?.. %F{${ERROR_COLOR}}[%?])%f %F{${SECONDARY_COLOR}}\$(parse_git_branch)%f ${NEWLINE}%# "
