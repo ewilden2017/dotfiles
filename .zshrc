@@ -23,10 +23,10 @@ bindkey -v '^?' backward-delete-char
 bindkey -M vicmd '?' history-incremental-pattern-search-backward
 bindkey -M vicmd '/' history-incremental-pattern-search-forward
 
-bindkey "^[OA" up-line-or-beginning-search
-bindkey "^[OB" down-line-or-beginning-search
-bindkey -M vicmd "k" up-line-or-beginning-search
-bindkey -M vicmd "j" down-line-or-beginning-search
+#bindkey "^[OA" up-line-or-beginning-search
+#bindkey "^[OB" down-line-or-beginning-search
+#bindkey -M vicmd "k" up-line-or-beginning-search
+#bindkey -M vicmd "j" down-line-or-beginning-search
 
 # Make switch to cmd mode faster
 export KEYTIMEOUT=1
