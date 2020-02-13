@@ -29,7 +29,7 @@ bindkey -M vicmd "k" up-line-or-beginning-search
 bindkey -M vicmd "j" down-line-or-beginning-search
 
 # Make switch to cmd mode faster
-EXPORT KEYTIMEOUT=1
+export KEYTIMEOUT=1
 
 # Correction
 setopt CORRECT
