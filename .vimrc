@@ -58,6 +58,7 @@ if has('gui_running')
     set guifont=DejaVu\ Sans\ Mono:h10
 
     if has#colorscheme('gruvbox')
+        let g:gruvbox_contrast_dark = 'hard'
         colorscheme gruvbox
     else
         colorscheme desert
@@ -66,6 +67,7 @@ if has('gui_running')
     set mouse=a
     autocmd GUIEnter * set vb t_vb=
 else
+    let g:gruvbox_contrast_dark = 'hard'
     colorscheme gruvbox
 endif
 

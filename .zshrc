@@ -17,6 +17,19 @@ compinit
 # Enable ctrl-R reverse search
 bindkey -v
 bindkey '^R' history-incremental-pattern-search-backward
+bindkey -v '^?' backward-delete-char
+
+# Searching
+bindkey -M vicmd '?' history-incremental-pattern-search-backward
+bindkey -M vicmd '/' history-incremental-pattern-search-forward
+
+bindkey "^[OA" up-line-or-beginning-search
+bindkey "^[OB" down-line-or-beginning-search
+bindkey -M vicmd "k" up-line-or-beginning-search
+bindkey -M vicmd "j" down-line-or-beginning-search
+
+# Make switch to cmd mode faster
+EXPORT KEYTIMEOUT=1
 
 # Correction
 setopt CORRECT
@@ -25,6 +38,7 @@ setopt CORRECT_ALL
 alias ls='ls -bF --color'
 alias ll='ls -bFlah --color'
 alias ff="find . -name"
+alias grep='grep --color'
 
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
