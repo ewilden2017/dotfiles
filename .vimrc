@@ -24,6 +24,8 @@ if !empty(glob('~/.vim/autoload/plug.vim')) || !empty(glob('~/vimfiles/autoload/
     Plug 'morhetz/gruvbox'
     Plug 'arcticicestudio/nord-vim'
 
+    Plug 'ARM9/arm-syntax-vim'
+
     call plug#end()
 
     " lightline
@@ -49,7 +51,8 @@ if !empty(glob('~/.vim/autoload/plug.vim')) || !empty(glob('~/vimfiles/autoload/
     " ,b launches ctrl-p buffer mode
     nmap <silent> <leader>b :CtrlPBuffer<CR>
 
-
+    " Arm highlighting
+    au BufNewFile,BufRead *.s,*.S set filetype=arm " arm = armv6/7
 endif
 
 
@@ -137,7 +140,11 @@ if !has('win16') && !has('win32')
     command! W w !sudo tee % > /dev/null
 endif
 
-nnoremap<leader>l :set list!<CR>
+nnoremap<leader>c :set list!<CR>
+
+" Buffer movement
+nnoremap<silent> <leader>l :bn<CR>
+nnoremap<silent> <leader>h :bp<CR>
 
 
 " Spelling
