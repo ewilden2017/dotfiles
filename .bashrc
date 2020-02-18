@@ -2,6 +2,7 @@
 set +o ignoreeof
 
 # alias
+alias ls="ls --color"
 alias ll="ls -bFlah --color"
 alias ff="find . -name"
 
