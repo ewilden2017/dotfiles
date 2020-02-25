@@ -52,3 +52,6 @@ ERROR_COLOR=124
 # Color version
 setopt prompt_subst
 export  PROMPT="%F{white}%B[%n@%m] %F{${MAIN_COLOR}}%10~%b%(?.. %F{${ERROR_COLOR}}[%?])%f %F{${SECONDARY_COLOR}}\$(parse_git_branch)%f ${NEWLINE}%# "
+
+# ls colors
+export LS_COLORS='di=38;5;109;01:ex=38;5;142;01:ln=38;5;175;01:or=38;5;167;01:bd=38;5;208;01:cd=38;5;208;01:tw=38;5;234;48;5;72:ow=38;5;66;48;5;72'

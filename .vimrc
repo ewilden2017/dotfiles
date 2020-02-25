@@ -25,6 +25,7 @@ if !empty(glob('~/.vim/autoload/plug.vim')) || !empty(glob('~/vimfiles/autoload/
     Plug 'arcticicestudio/nord-vim'
 
     Plug 'ARM9/arm-syntax-vim'
+    Plug 'ycm-core/YouCompleteMe'
 
     call plug#end()
 
@@ -53,6 +54,11 @@ if !empty(glob('~/.vim/autoload/plug.vim')) || !empty(glob('~/vimfiles/autoload/
 
     " Arm highlighting
     au BufNewFile,BufRead *.s,*.S set filetype=arm " arm = armv6/7
+
+    " YCM
+    let g:ycm_autoclose_preview_window_after_completion = 1
+    set signcolumn=yes
+
 endif
 
 
