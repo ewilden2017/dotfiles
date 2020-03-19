@@ -83,6 +83,11 @@ endif
 syntax on
 set background=dark
 
+" Fix terminal highlighting
+if &term =~ '256color'
+    set t_ut=
+endif
+
 " Whitespace
 set tabstop=4
 set softtabstop=4

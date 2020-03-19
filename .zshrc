@@ -31,6 +31,9 @@ bindkey -M vicmd '/' history-incremental-pattern-search-forward
 # Make switch to cmd mode faster
 export KEYTIMEOUT=1
 
+# Normal backspace
+bindkey "^?" backward-delete-char
+
 # Correction
 setopt CORRECT
 setopt CORRECT_ALL
