@@ -50,7 +50,9 @@ if !empty(glob('~/.vim/autoload/plug.vim')) || !empty(glob('~/vimfiles/autoload/
     endif
 
     " ,b launches ctrl-p buffer mode
-    nmap <silent> <leader>b :CtrlPBuffer<CR>
+    nnoremap <silent> <leader>b :CtrlPBuffer<CR>
+    " ,. launches ctrl-p in tag mode
+    nnoremap <silent> <leader>. :CtrlPTag<CR>
 
     " Arm highlighting
     au BufNewFile,BufRead *.s,*.S set filetype=arm " arm = armv6/7
@@ -139,8 +141,8 @@ set foldmethod=indent
 
 " Movement
 " Move by displayed lines when wrapping
-nnoremap j gj
-nnoremap k gk
+nnoremap<silent> j gj
+nnoremap<silent> k gk
 
 " Commands
 
