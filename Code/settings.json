@@ -1,0 +1,51 @@
+{
+    "python.defaultInterpreterPath": "C:\\Python32\\python.exe",
+    "editor.cursorSurroundingLines": 4,
+    "editor.find.autoFindInSelection": "multiline",
+    "editor.formatOnSave": true,
+    "files.eol": "\n",
+    "C_Cpp.clang_format_fallbackStyle": "Mozilla",
+    "C_Cpp.clang_format_sortIncludes": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.commandLineModeKeyBindingsNonRecursive": [
+    
+    ],
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "editor.detectIndentation": false,
+    "remote.SSH.remotePlatform": {
+        "192.168.1.223": "linux",
+        "127.0.1.1": "linux",
+        "192.168.1.107": "linux",
+        "best-linux.cs.wisc.edu": "linux"
+    },
+    "window.zoomLevel": 0,
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "-l 100"
+    ],
+    "workbench.colorTheme": "Dracula",
+    "mesonbuild.configureOnOpen": true,
+    "remote.SSH.lockfilesInTmp": true,
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java"
+    },
+    "clang-format.fallbackStyle": "Google",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "java.format.settings.profile": "GoogleStyle",
+    "java.format.settings.url": "style.xml",
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.currentLine.enabled": false
+}
