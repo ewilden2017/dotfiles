@@ -25,7 +25,7 @@ if !empty(glob('~/.vim/autoload/plug.vim')) || !empty(glob('~/vimfiles/autoload/
     Plug 'arcticicestudio/nord-vim'
 
     Plug 'ARM9/arm-syntax-vim'
-    Plug 'ycm-core/YouCompleteMe'
+"    Plug 'ycm-core/YouCompleteMe'
 
     call plug#end()
 
