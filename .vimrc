@@ -23,6 +23,7 @@ if !empty(glob('~/.vim/autoload/plug.vim')) || !empty(glob('~/vimfiles/autoload/
 
     Plug 'morhetz/gruvbox'
     Plug 'arcticicestudio/nord-vim'
+    Plug 'dracula/vim'
 
     Plug 'ARM9/arm-syntax-vim'
 "    Plug 'ycm-core/YouCompleteMe'
@@ -68,9 +69,8 @@ endif
 if has('gui_running')
     set guifont=DejaVu\ Sans\ Mono:h10
 
-    if has#colorscheme('gruvbox')
-        let g:gruvbox_contrast_dark = 'hard'
-        colorscheme gruvbox
+    if has#colorscheme('dracula')
+        colorscheme dracula
     else
         colorscheme desert
     endif
@@ -78,8 +78,7 @@ if has('gui_running')
     set mouse=a
     autocmd GUIEnter * set vb t_vb=
 else
-    let g:gruvbox_contrast_dark = 'hard'
-    colorscheme gruvbox
+    colorscheme dracula
 endif
 
 syntax on
